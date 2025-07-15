@@ -19,5 +19,7 @@ setupListeners(store.dispatch);
 export { useFetchResourcesQuery } from "./apis/resourcesApi";
 export { setResources } from "./slices/resources";
 
+export { useAddFileMutation } from "./apis/filesApi"
+
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;

@@ -216,4 +216,7 @@
     <data name="VerificationCode" xml:space="preserve">
         <value>کد تایید</value>
     </data>
+    <data name="File" xml:space="preserve">
+        <value>فایل</value>
+    </data>
 </root>

@@ -201,4 +201,9 @@ public class Titles
 	/// Looks up a localized string similar to کد تایید.
 	/// </summary>
 	public static string VerificationCode => ResourceManager.GetString("VerificationCode", Culture);
+	
+	/// <summary>
+	/// Looks up a localized string similar to فایل.
+	/// </summary>
+	public static string File => ResourceManager.GetString("File", Culture);
 }
