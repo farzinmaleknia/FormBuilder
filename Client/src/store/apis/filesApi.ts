@@ -10,14 +10,14 @@ const filesApi = createApi({
   baseQuery: dynamicBaseQuery as BaseQueryFn<string | FetchArgs, unknown, FetchBaseQueryError>,
   endpoints(builder){
     return {
-      addFile: builder.mutation<ResultClass<boolean>, File>({
-        query: (inputFile) => {
+      addFile: builder.mutation<ResultClass<Blob>, File>({
+        query: (file) => {
+          const formData = new FormData();
+          formData.append("file", file);
           return {
             url: '/Files',
             method: 'Post',
-            body: {
-              file: inputFile,
-            },
+            body: formData,
           }
         }
       })

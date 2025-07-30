@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "A9PKRZfZUTDhj1QRyCFFkEHzqJ04Y7sk6OEkYYD+as4=",
-  "Source": "api",
-  "BasePath": "_content/api",
+  "Hash": "KvHOo5kMW9jTGuGBrmhGdXuYzweoU5ZoThezt6L9uIQ=",
+  "Source": "Api",
+  "BasePath": "_content/Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

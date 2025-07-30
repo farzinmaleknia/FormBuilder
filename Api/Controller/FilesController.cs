@@ -7,15 +7,15 @@ namespace Api.Controllers;
 [Route("[controller]")]
 public class FilesController : ControllerBase
 {
-  private readonly FilesService _filesService;
+  private readonly IFilesService _filesService;
 
-  public FilesController(FilesService filesService)
+  public FilesController(IFilesService filesService)
   {
     _filesService = filesService;
   }
 
   [HttpPost]
-  public async Task<ActionResult<ResultClass<bool>>> AddFile([FromBody]IFormFile file)
+  public async Task<ActionResult<ResultClass<byte[]>>> AddFile(IFormFile file)
   {
     var result = await _filesService.AddFile(file);
 

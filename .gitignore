@@ -489,6 +489,12 @@ $RECYCLE.BIN/
 obj
 bin
 .resxpress/*
+bin/*
+obj/*
+Api/bin
+Api/obj
+**/bin/
+**/obj/
 
 # React ignorance
 
